@@ -1,0 +1,430 @@
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt,
+var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary,time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+display: block;
+}
+body {
+line-height: 1.2;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+ol {
+padding-left: 1.4em;
+list-style: decimal;
+}
+ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+a{
+	text-decoration: none;
+}
+/* завершение сброса стилей браузера */
+body{
+	background-color: #282828;
+}
+@font-face{
+
+font-family: 'Sansation';
+
+src: url('font/Sansation_Regular.ttf');
+
+src:url('font/Sansation_Italic.ttf') format('truetype'),
+
+font-weight: normal;
+
+font-style: normal;
+
+}
+.wrapper{
+	width: 1000px;
+	margin: 50px auto;
+}
+.head{
+	background-image: url(img/banner.png);
+	height: 550px;
+	position: relative;
+}
+.logo{
+	display: inline-block;
+	margin: 21px 0 0 31px;
+}
+nav{
+	display: inline-block;
+	margin-left: 60px;
+}
+li{
+	display: inline-block;
+	font-family: "Sansation";
+	font-size: 18px;
+	margin-left: 30px;
+}
+.logo p{
+	font-family: "Sansation";
+	font-size: 24px;
+	color: #fff;
+}
+.logo p span{
+	color:#da2346;
+}
+li a{
+	text-decoration: none;
+	color: #fff;
+}
+.icons{
+	float: right;
+	margin: 28px 31px 0 0;
+}
+.icons a{
+	color: #fff;
+	border:1px solid #fff;
+	padding: 5px 5px;
+	border-radius: 15px;
+	margin-left: 5px;
+}
+.fa-facebook{
+	padding:0 5px 0 5px;
+}
+.fa-twitter{
+    padding:0 2px 0 2px;
+}
+li a:hover,.icons a:hover{
+	color:#097e89;
+}
+.banner_discriptoin h1{
+	text-transform: uppercase;
+	font-size:48px;
+	color: #fff;
+	font-family: "Sansation";
+
+}
+.banner_discriptoin {
+	position: absolute;
+	top: 15rem;
+    left: 17rem;
+}
+.banner_discriptoin p{
+	font-size: 12px;
+	color: #FFF;
+	font-family: "Sansation";
+	text-align: center;
+	margin-top: 20px;
+}
+.abaut_us{
+	overflow: hidden;
+}
+.abaut_img{
+	float: left;
+	height: 450px;
+}
+.abaut_txt{
+	float: right;
+	width: 50%;
+	position: relative;
+	height: 450px;
+	background-color: #fff;
+}
+.abaut_txt h2{
+	text-transform: uppercase;
+	font-size: 24px;
+    font-family: "Sansation";
+    color: #252525;
+    margin:40px 0 0 50px;
+    word-spacing:5px;
+    border-bottom: 1px solid #515151;
+    width: 300px;
+    padding-bottom: 5px;
+}
+.abaut_txt h2 span{
+	border-bottom: 1px solid #515151;
+	padding-bottom: 6px;
+}
+.abaut_txt p {
+	margin:40px 10px 0 40px;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 14px;
+}
+.abaut_txt a {
+	text-transform: uppercase;
+	font-size: 13px;
+	background-color: #05a0af;
+	padding: 10px 30px 10px 30px;
+	color: #fff;
+	position:absolute;
+	bottom: 85px;
+	left: 40px;
+	border-radius: 5px;
+	font-family: 'Exo', sans-serif;
+}
+.service{
+	background-color: #3d3d3d;
+}
+.head_service h2{
+	font-family: "Sansation";
+    font-size: 40px;
+    text-align: center;
+    display: inline-block;
+    color: #f7f7f7;
+    margin: 30px 0px 30px 0px;
+    text-transform: uppercase;
+
+
+}
+.head_service{
+	background-color: #373737;
+}
+.head_service:before {
+    margin-left: 62px;
+}
+.head_service:before, .head_service:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 29%;
+    height: 1px;
+    background: #fff;
+    border: solid #FFF;
+    border-width: 0 0px;
+}
+.service_section{
+	background-color: #3d3d3d;
+	height: 554px;
+}
+.service_section img{
+	margin: 100px 0 0 100px; 
+}
+.service_section h2{
+	font-family: "Sansation";
+	font-size: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	text-transform: uppercase;
+	margin-top:20px;
+	color: #fff;
+}
+.service_section p{
+	text-align: center;
+	color: #fff;
+	font-family: "Sansation";
+	font-size: 14px;
+	margin: 20px 0 50px 0;
+}
+.service_section a{
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: "Sansation";
+	color: #fff;
+	margin: 0 0 0 95px;
+	background-color: #959595;
+	padding: 5px 25px 5px 25px;
+	border-radius: 5px;
+}
+.service_section section{
+	width:33%;
+	display: inline-block;
+	height: 554px;
+}
+.section_center{
+	background-color: #097e89;
+}
+.head_feadback:before {
+    margin-left: 100px;
+    }
+.feadback_contact{
+	background-color: #3d3d3d;
+	height: 285px
+}
+.feadback_contact section{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-left: 5px;
+}
+.text_feadback p{
+	font-family: "Sansation";
+	font-size: 18px;
+	color: #cdc8c8;
+	text-align: center;
+	display: inline-block;
+	margin: 70px 0 0 50px;
+}
+.text_feadback{
+	width: 340px;
+}
+.person_number,.person_name{
+	color: #000;
+	background-color: #fff;
+	font-family: "Sansation";
+	font-size: 10px;
+	height: 20px;
+}
+.person_number{
+	position: absolute;
+	bottom: 30px;
+    left: 20px;
+    padding: 7px 10px 0px 10px;
+}
+.person_name{
+	position: absolute;
+	bottom: 30px;
+    right: 28px;
+    padding: 2px 58px 5px 10px;
+}
+.feadback_contact section img{
+	margin-top: 25px;
+}
+.head_client{
+	background-color: #fff;
+}
+.head_client h2{
+	color: #656464;
+}
+.head_client:before {
+    margin-left: 130px;
+}
+.head_client:before, .head_client:after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 29%;
+    height: 1px;
+    background: #656464;
+    border: solid #FFF;
+    border-width: 0 0px;
+}
+.client_col{
+	background-color: #fff;
+}
+.client_col section{
+	display: inline-block;
+}
+.quote{
+	background-color: #097e89;
+	height: 200px;
+
+}
+.quote h2{
+	font-family: "Sansation";
+	text-align: left;
+	font-size:30px;
+	color:#fff;
+	padding:30px 0 0 40px;
+	display: inline-block;
+}
+.quote p{
+	font-family: "Sansation";
+	font-size:10px;
+	color: #fff;
+	margin:30px 0 0 40px; 
+	display: inline-block;
+
+}
+.quote form{
+	float:right;
+	margin-right: 20px;
+}
+.quote input{
+	background-color: #097e89;
+	border: 1px solid #fff;
+	color: #fff;
+	font-family: "Sansation";
+	font-size:14px;
+	padding: 10px 0 10px 15px;
+}
+.quote input::-webkit-input-placeholder{
+	color: #fff;
+	font-family: "Sansation";
+}
+.quote input[type="submit"]{
+	background-color: #fff;
+	color: #097e89;
+	width: 100px;
+	padding: 10px 0 10px 0px;
+}
+footer{
+	background-color: #474747;
+}
+footer section{
+	width: 150px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 20px;
+}
+footer section h2{
+	text-align: center;
+	font-family: "Sansation";
+	color: #fff;
+	font-size: 15px;
+}
+footer section ul li{
+	font-size: 13px;
+	color: #fff;
+	display: block;
+	line-height: 25px;
+
+}
+h2 span{
+	border-bottom: 1px solid #fff;
+}
+.social{
+	float: right;
+	width: 300px;
+}
+.social form{
+	margin-top:10px;
+}
+.social form input[type="text"]{
+	padding: 10px 0 10px 15px;
+	font-family: "Sansation";
+	font-size:14px;
+	color: #5a5959;
+	background-color: #cccccc;
+	border: none;
+}
+.social form input[type="submit"]{
+	padding: 11px 0 10px 0px;
+	background-color: #0072bc;
+	border: none;
+	width: 80px;
+	color: #fff;
+}
+.social p{
+	margin-top: 20px;
+}
+.social p a {
+	color: #bababa;
+	border:1px solid #2e2e2e;
+	padding: 5px 5px;
+	border-radius: 15px;
+	margin-left: 5px;
+	background-color: #2e2e2e;
+}
+footer section ul{
+	margin-top: 10px;
+}
