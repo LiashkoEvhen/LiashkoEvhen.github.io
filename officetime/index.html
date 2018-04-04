@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+	<script>
+		function openCity(evt, TabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(TabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+	</script>
+</head>
+<body>
+	<div class="site">
+		<div class="wrapper">
+		<header>
+			<div class="logo">
+			<img src="img/logo.png" alt="logo">
+			<p>Officetime a psd template</p>
+			</div>
+			<nav>
+				<ul id="nav">
+					 <li menu__list><a href="#">Home</a></li>
+					 <li><a href="#">About</a></li>
+					 <li class="menu__list"><a href="#">Products</a> 
+					 		<ul class="menu_drop">
+					 			<li><a href="#">Telefon</a><br><p>this text is complementary</p></li>
+					 			<li><a href="#">Television</a></li>
+					 		    <li><a href="#">Modem</a></li>
+					 		    <img src="img/treug.png" alt="">
+					 		</ul>
+					 </li> 
+					 <li><a href="#">Blog</a></li>
+					 <li><a href="#">Help</a></li>
+					 <li class="apply"><a href="#">Apply now</a></li>
+				</ul>
+			</nav>
+		</header>
+ 	</div>
+ 	<div class="wrapper">
+	<div class="baner">
+		
+		 <div class="banner_img"></div>
+		 <div class="banner_text"> 
+		 	<h1>The Amazing Spider-Man</h1>
+		 	<p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas <br>
+		 	urna mollis ornare vel eu leo</p>
+		 	<div class="bottom"> <img src="img/bottom.png" alt=""></div>
+		 </div>	
+		</div>
+	</div>
+	<div class="wrapper">
+		<h2>The Undiscovered Beauty</h2>
+		<div class="content">
+			<section>
+				<div class="sec_img"> <img src="img/img_sect1.png" alt=""> <img src="img/bg_section1.png" alt="" class="bg_section"> <h5>Vehicula Inceptos Pharetra</h5> <p>Aenean eu leo quam. Pellentesque ornare sem lacinia.</p>
+				</div>
+				<div class="sec_content">
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</section>
+			<section>
+				<div class="sec_img"> <img src="img/img_sect2.png" alt=""> <img src="img/bg_section2.png" alt="" class="bg_section"> <h5>Vehicula Inceptos Pharetra</h5> <p>Aenean eu leo quam. Pellentesque ornare sem lacinia.</p>
+				</div>
+				<div class="sec_content">
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</section>
+			<section>
+				<div class="sec_img"> <img src="img/img_sect3.png" alt=""> <img src="img/bg_section3.png" alt="" class="bg_section"> <h5>Vehicula Inceptos Pharetra</h5> <p>Aenean eu leo quam. Pellentesque ornare sem lacinia.</p>
+				</div>
+				<div class="sec_content">
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			</section>
+				</div>
+		<div class="tabs">
+			<h2>Tabbbs get your content in line</h2>
+			<!-- Tab links -->
+					<div class="tab">
+						 <button class="tablinks" onclick="openCity(event, 'TabOne')">Tabbb One</button>
+  						 <button class="tablinks" onclick="openCity(event, 'TabTwo')">Tabbb Two</button>
+  						 <button class="tablinks" onclick="openCity(event, 'TabThree')">Tabbb Three</button>
+					</div>
+
+			<!-- Tab content -->
+					<div id="TabOne" class="tabcontent tab_one">
+  						<h3>You content can be highlighted like this.</h3>
+  						<section class="first_sec"> 
+  							<ul>
+  								<li>Magna Porta</li>
+  								<li>Cras Amet</li>
+  								<li>Pharetra Ornare</li>
+  								<li>Dolor Pharetra</li>
+  								<li>Nibh Sit E</li>
+  							</ul>
+  						</section>
+  						<section>
+  							<img src="img/tab-img1.png" alt="forest">
+  							<h6>Tiple a title</h6>
+  							<p>Nulla vitae elit libero,<br> a pharetra augue. <br>Maecena de la pounce</p>
+  						</section>
+  						<section>
+  							<img src="img/tab-img2.png" alt="forest">
+  							<h6>Tiple a title</h6>
+  							<p>Nulla vitae elit libero,<br> a pharetra augue.</p>
+  						</section>
+					</div>
+
+					<div id="TabTwo" class="tabcontent">
+						<h3>You content can be highlighted like this.</h3>
+  						<p>Paris is the capital of France.</p> 
+					</div>
+
+					<div id="TabThree" class="tabcontent">
+  						<h3>You content can be highlighted like this.</h3>
+  						<p>Tokyo is the capital of Japan.</p>
+					</div>
+			</div>
+			<div class="footer">
+				<section>
+					<h2>SINGLE MENU TITLE</h2>
+					<ul>
+						<li>Condimentum</li>
+						<li>Etiam Purus</li>
+						<li>Quam Tristique</li>
+						<li>Sem Fusce</li>
+						<li>Parturient Tri</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Cursus Venenatis Mollis</h2>
+					<ul>
+						<li>Condimentum</li>
+						<li>Etiam Purus</li>
+						<li>Quam Tristique</li>
+						<li>Sem Fusce</li>
+						<li>Parturient Tri</li>
+					</ul>
+				</section>
+				<section>
+					<h2>LATEST ARTICLES</h2>
+					<ul class="footer_last_ul">
+						<li class="last_ul"> <span>Magna Parturient Aenean</span> <br>Sed posuere consectetur est at lobortis.  Maecenas faucibus mol</li>
+						<li class="last_ul"><span>Fusce Etiam Bibendum</span> <br>Etiam Purus Sed posuere consectetur est at lobortis.  Maecenas faucibus mol</li>
+						<li class="last_ul"> <span>Fusce Parturient </span> <br>Quam Tristique Sed posuere consectetur est at lobortis.  Maecenas faucibus mol</li>
+					</ul>
+				</section>
+
+			</div>
+	</div>
+    	
+
+
+
+</div>	
+</body>
+</html>

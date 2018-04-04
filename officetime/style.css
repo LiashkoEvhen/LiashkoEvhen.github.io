@@ -1,0 +1,390 @@
+
+/* сброс стилей браузера */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt,
+var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby,
+section, summary,time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup,
+menu, nav, section {
+display: block;
+}
+body {
+line-height: 1.2;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+ol {
+padding-left: 1.4em;
+list-style: decimal;
+}
+ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+/* завершение сброса стилей браузера */
+body{
+	background-image: url(img/background.png);
+	background-repeat: repeat;
+}
+.site{
+	width: 972px;
+	margin:60px auto;
+	background-color: #fff;
+	
+}
+.wrapper{
+	width: 932px;
+	margin: 0 auto;
+	overflow: hidden;
+	z-index: 3;
+}
+header{
+	overflow: hidden;
+}
+.logo{
+	float: left;
+	margin: 30px 0 0 10px;
+}
+nav{
+	float: right;
+	margin-top: 52px;
+}
+nav li{
+	display: inline-block;
+	margin-right: 55px;
+	font-family: "Oxygen", Arial;
+	border-bottom:10px solid transparent;	
+}
+ li a{ 
+	text-decoration:none;
+	color:#666;
+	font-size: 14px;
+}
+.apply{
+	margin-right: 0;
+	padding: 5px;
+	background-color: #ffc551;
+	border-radius: 6px;
+	border: none;
+}
+.apply a{
+	color: white;
+}
+.logo p{
+	color: #999;
+	font-size:11px;
+	font-family: Arial;
+}
+.menu_drop{ 
+position: absolute; 
+opacity: 0;
+top: -999em;
+border: 1px solid #e0e0e0;
+width: 160px;
+padding: 5px;
+border-radius: 2px;
+background-color: white;
+
+}
+.menu_drop li{
+	display: block;
+	border-bottom: 1px solid #f3f3f3;
+	width: 150px;
+	padding:5px;
+}
+.menu__list:hover .menu_drop{
+	opacity: 1;
+	top:5em;
+}
+.menu_drop li a{
+	color: #7d7d7d;
+}
+.menu_drop li:hover{
+	background-color: #f3f3f3;
+}
+.menu_drop img{
+	position: absolute;
+	top: -1px;
+    left: 17px;
+}
+.menu_drop p{
+	font-size: 10px;
+	color: #aaa;
+	font-family: Arial;
+}
+.banner_img{
+	width: 292px;
+    height: 188px;
+	background-image: url(img/banner_img.png);
+	float: left;
+	margin-left: 50px;
+	margin-top: 50px;
+
+}
+.baner{
+    overflow: hidden;
+    border-bottom:1px solid #e5e5e5;
+
+}
+h1{
+	font-family: 'Oxygen',Arila;
+	font-size: 38px;
+	color: #515151;
+	padding-left: 62px
+}
+.banner_text{
+	float: right;
+	margin-right: 50px;
+	margin-top: 60px;
+}
+.banner_text p{
+	font-family: "Oxygen",Arial;
+	color: #666;
+	font-size: 14px;
+	text-align: right;
+	margin:10px 0 30px 0;
+}
+.bottom{
+	float: right;
+	width: 490px;
+	border-top: 1px solid #f6f6f6;
+}
+.bottom img{
+ float: right;
+ margin: 10px 5px 93px 0;
+
+}
+h2{
+	font-family: "Oxygen",Arial;
+	font-size: 18px;
+	color: #222;
+	margin-top: 15px;
+}
+.sec_img{
+	border:1px solid #f1f1f1;
+	margin-top: 10px;
+	padding: 2px;
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+}
+.bg_section{
+	position: absolute;
+    bottom: -54px;
+    z-index: -1;
+    left: -1px;
+    overflow: hidden;
+}
+.content section{
+	width: 33%;
+	display: inline-block;
+}
+h5{
+	color: #666;
+	font-size: 14px;
+	position: absolute;
+	bottom: -20px;
+	font-family: "Oxygen",Arial;
+	padding-left: 5px;
+}
+.sec_img p{
+	color: #999;
+	font-size: 11px;
+	font-family: Arial;
+    position: absolute;
+    bottom: -37px;
+    padding-left: 5px;
+}
+.sec_content{
+	width: 294px;
+    margin-top: 66px;
+    padding: 3px;
+}
+.sec_content p{
+	color: #666;
+	font-size: 12px;
+	font-family: Arial;
+	line-height: 1.5;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+   	background: #fefefe;
+background: -webkit-linear-gradient(#fefefe 0%, #fefefe 46%, #dbdbdb 100%, #e2e2e2 100%, #e2e2e2 101%, #dbdbdb 101%);
+background: -o-linear-gradient(#fefefe 0%, #fefefe 46%, #dbdbdb 100%, #e2e2e2 100%, #e2e2e2 101%, #dbdbdb 101%);
+background: linear-gradient(#fefefe 0%, #fefefe 46%, #dbdbdb 100%, #e2e2e2 100%, #e2e2e2 101%, #dbdbdb 101%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#dbdbdb',GradientType=0 );
+    margin-top: 10px;
+    border-bottom: none;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Oxygen",Arial;
+
+}
+
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #fff;
+    border-left: 1px #999 solid;
+    border-right:  1px #999 solid;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    padding: 30px;
+    height: 120px;
+}
+.tab_one{
+	display: block;
+}
+.tabcontent h3{
+	font-family: "Oxygen",Arial;
+	font-size: 14px;
+	padding-bottom: 10px;
+	border-bottom:  1px #e5e5e5 solid;
+}
+.tabcontent ul{
+	font-family: "Oxygen",Arial;
+	font-size: 14px;
+	color: #333;
+	list-style-image: url(img/list-style.png);
+} 
+.tabcontent section{
+	margin:15px 0 0 15px; 
+	display: inline-block;
+	width: 260px;
+	vertical-align: top;
+}
+.tabcontent img {
+	float: left;
+
+}
+.tabcontent .first_sec{
+	margin-top: 17px; 
+}
+.tabcontent section p{
+	font-size: 12px;
+	font-family: "Oxygen",Arial;
+	color: #a8a7a7;
+	margin-left: 130px;
+	padding-top: 4px;
+}
+h6{
+	color: black;
+	font-size: 12px;
+	font-family: "Oxygen",Arial;
+	margin-left: 130px;
+}
+.footer {
+	margin-top: 35px;
+	border-top: 1px #cbcbcb solid;
+
+}
+.footer h2{
+	font-family: "Oxygen",Arial;
+	font-size: 12px;
+	color: #ffad19;
+	text-transform: uppercase;
+
+}
+.footer section{
+	display: inline-block;
+	width: 33%;
+	vertical-align: top
+}
+.footer li{
+	color: #666;
+	font-family: "Oxygen",Arial;
+	font-size: 13px;
+	padding:10px;
+	border-bottom: 1px #cbcbcb solid;
+	width: 150px;
+
+}
+ ul .last_ul{
+	width: 100%;
+	color:#aaa;
+	font-size: 11px;
+}
+.footer span{
+	color: #403f3f;
+	font-family: "Oxygen",Arial;
+	font-size: 13px;
+}
+.footer_last_ul{
+	list-style-image: url(img/footer-list-style.png);
+}
+.site
+{
+  position: relative;
+}
+.site:before, .site:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 15px 10px #777;
+  -moz-box-shadow: 0 15px 10px #777;
+  box-shadow: 0 15px 10px #777;
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+.site:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
