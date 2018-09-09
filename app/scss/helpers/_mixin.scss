@@ -1,0 +1,160 @@
+@mixin background-opacity($color, $opacity: 0.3) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}
+
+@mixin toRgba($property, $color, $opacity: 0.3) {
+  #{$property}: $color; /* The Fallback */
+  #{$property}: rgba($color, $opacity);
+}
+
+//@include font-face()
+@mixin font-face($style-name, $file, $family, $weight) {
+  $filepath: "../fonts/" + $family + "/" + $file;
+  @font-face {
+    font-family: "#{$style-name}";
+    src: url($filepath + ".eot");
+    src: url($filepath + ".eot?#iefix") format('embedded-opentype'), url($filepath + ".woff") format('woff'), url($filepath + ".ttf") format('truetype'), url($filepath + ".svg#" + $style-name + "") format('svg');
+    font-weight: $weight;
+    font-style: normal;
+
+  }
+
+}
+
+@mixin ls($val) {
+  letter-spacing: ( $val / 1000 ) * 1em;
+}
+
+@mixin borderOnHover($color) {
+  padding-bottom: 2px;
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: $color;
+    transform: scale3d(0, 1, 1);
+    transition: transform 0.2s;
+    transform-origin: 0 50%;
+  }
+  .no-touch & {
+    &:hover {
+      &:after {
+        transform: scale3d(1, 1, 1);
+        transition-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+        transition-duration: 0.4s;
+      }
+    }
+  }
+
+}
+
+@mixin slider($bdw) {
+  .owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+
+    .no-touch &:hover {
+      span {
+        background: #151d23;
+      }
+    }
+
+    span {
+      background: transparent;
+      border: $bdw+px solid #151d23;
+      display: block;
+      height: 12px;
+      width: 12px;
+      margin: 5px 7px;
+      transition: .3s ease background;
+    }
+
+    &.active {
+      span {
+        background: #151d23;
+      }
+    }
+  }
+
+  .owl-dots {
+    display: inline-block;
+    &.disabled {
+      & ~ span {
+        display: none;
+      }
+    }
+
+  }
+  .owl-controls {
+    z-index: 5;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__control {
+    display: block;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    top: -10px;
+    z-index: 1;
+    cursor: pointer;
+    border: $bdw+px solid #141d22;
+    transition: .3s ease background, .3s ease color;
+
+    .no-touch &:hover {
+      background: #141d22;
+      color: #ffffff;
+    }
+
+    i {
+      font-size: 25px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      line-height: 0.9;
+    }
+  }
+
+  &__prev {
+    left: -50px;
+    transform: rotate(-180deg);
+  }
+
+  &__next {
+    right: -50px;
+  }
+}
+
+/// Mixin to manage responsive breakpoints
+/// @author Hugo Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+
+@mixin breakpoint($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+    // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

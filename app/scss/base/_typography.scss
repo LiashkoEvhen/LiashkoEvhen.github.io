@@ -1,0 +1,351 @@
+@import "_variables";
+// Typography
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6,
+.h {
+  font-family: $headings-font-family;
+  font-weight: bold;
+  margin: 0 0 1em;
+  color: $headings-color;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+}
+
+h2, .h2 {
+  font-size: $h2-font-size;
+}
+
+h3, .h3 {
+  font-size: $h3-font-size;
+}
+
+h4, .h4 {
+  font-size: $h4-font-size;
+}
+
+h5, .h5 {
+  font-size: $h5-font-size;
+}
+
+h6, .h6 {
+  font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: $base-link-color;
+  transition: $trs ease-out color;
+  &:hover {
+    text-decoration: none;
+    //color: $blue;
+  }
+  &:visited {
+    //color: $gray;
+  }
+}
+
+@include font-face('bremboparts','bremboparts','bremboparts',normal);
+
+[class^="fastic-"]:before, [class*=" fastic-"]:before {
+  font-family: "bremboparts" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.fastic-all:before {
+  content: ""
+}
+
+.fastic-appliedforce:before {
+  content: ""
+}
+
+.fastic-ballbearings:before {
+  content: ""
+}
+
+.fastic-brakefluid:before {
+  content: ""
+}
+
+.fastic-code:before {
+  content: ""
+}
+
+.fastic-discmax:before {
+  content: ""
+}
+
+.fastic-drumbrake:before {
+  content: ""
+}
+
+.fastic-hc:before {
+  content: ""
+}
+
+.fastic-hydraulicbrake:before {
+  content: ""
+}
+
+.fastic-hydraulicclutch:before {
+  content: ""
+}
+
+.fastic-newparts:before {
+  content: ""
+}
+
+.fastic-padsaccessories:before {
+  content: ""
+}
+
+.fastic-productschedule:before {
+  content: ""
+}
+
+.fastic-regulatoryvalve:before {
+  content: ""
+}
+
+.fastic-screwkit:before {
+  content: ""
+}
+
+.fastic-shoes:before {
+  content: ""
+}
+
+.fastic-size:before {
+  content: ""
+}
+
+.fastic-tongs:before {
+  content: ""
+}
+
+.fastic-vehicle:before {
+  content: ""
+}
+
+.fastic-ventilatesdisc:before {
+  content: ""
+}
+
+.fastic-uv:before {
+  content: ""
+}
+
+.fastic-uv2:before {
+  content: ""
+}
+
+.fastic-disc:before {
+  content: ""
+}
+
+.fastic-youku:before {
+  content: ""
+}
+
+.fastic-pads:before {
+  content: ""
+}
+
+.fastic-distributor:before {
+  content: ""
+}
+
+.fastic-logo:before {
+  content: ""
+}
+
+.fastic-mail:before {
+  content: ""
+}
+
+.fastic-rear:before {
+  content: ""
+}
+
+.fastic-xtra:before {
+  content: ""
+}
+
+.fastic-position:before {
+  content: ""
+}
+
+.fastic-compare:before {
+  content: ""
+}
+
+.fastic-favourite:before {
+  content: ""
+}
+
+.fastic-favourite-minus:before {
+  content: ""
+}
+
+.fastic-favourite-plus:before {
+  content: ""
+}
+
+.fastic-front:before {
+  content: ""
+}
+
+.fastic-front-truck:before {
+  content: ""
+}
+
+.fastic-brake-master-cylinders:before {
+  content: ""
+}
+
+.fastic-clutch-slave-cylinders:before {
+  content: ""
+}
+
+.fastic-compare-minus:before {
+  content: ""
+}
+
+.fastic-compare-plus:before {
+  content: ""
+}
+
+.fastic-logo-ap:before {
+  content: ""
+}
+
+.fastic-logo-breco:before {
+  content: ""
+}
+
+.fastic-pipe:before {
+  content: ""
+}
+
+.fastic-brake-wheel-cylinders:before {
+  content: ""
+}
+
+.fastic-rear-truck:before {
+  content: ""
+}
+
+.fastic-plate:before {
+  content: ""
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-angle-right:before {
+  content: "\f105";
+}
+.fa-facebook-official:before {
+  content: "\f230";
+}
+.fa-instagram:before {
+  content: "\f16d";
+}
+.fa-angle-down:before {
+  content: "\f107";
+}
+.fa-twitter:before {
+  content: "\f099";
+}
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+.fa-angle-down:before {
+  content: "\f107";
+}
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+
+@font-face {
+  font-family: 'bitlab';
+  src:  url('../fonts/bitlab/bitlab.eot?3mqj6u');
+  src:  url('../fonts/bitlab/bitlab.eot?3mqj6u#iefix') format('embedded-opentype'),
+  url('../fonts/bitlab/bitlab.ttf?3mqj6u') format('truetype'),
+  url('../fonts/bitlab/bitlab.woff?3mqj6u') format('woff'),
+  url('../fonts/bitlab/bitlab.svg?3mqj6u#bitlab') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="bl-"], [class*=" bl-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'bitlab' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.bl-damper:before {
+  content: "\e901";
+}
+.bl-engine:before {
+  content: "\e902";
+}
+.bl-suspension:before {
+  content: "\e903";
+}
+.bl-springs:before {
+  content: "\e904";
+}
+.bl-car:before {
+  content: "\e905";
+}
+.bl-exhaust:before {
+  content: "\e906";
+}
+.bl-code:before {
+  content: "\e900";
+}
+.bl-cross:before {
+  content: "\e907";
+}

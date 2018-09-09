@@ -1,0 +1,35 @@
+.breadcrumbs {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  margin: 20px 0;
+  li {
+    color: #000000;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+
+    a {
+      color: inherit;
+      font-size: inherit;
+      display: inline-block;
+      text-transform: uppercase;
+      transition: .3s ease color;
+
+      &:hover {
+        color: $red;
+      }
+
+    }
+
+    i {
+      color: $red;
+      margin: 0 5px;
+    }
+
+  }
+}

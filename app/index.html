@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header--topmob">
+      <div class="header--top"><a class="logo" href="/"><img src="img/logo_white.svg" alt=""></a>
+      
+      <div class="btn__menu" style="display:none">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      </div>
+  </div>
+  <div class="header--mob" style="display: none">
+        <ul>
+            <li><a href>КАТАЛОГ </a></li>
+            <li><a href>ПРОДУКЦИЯ </a></li>
+            <li><a href>НОВОСТИ </a></li>
+            <li><a href>О НАС </a></li>
+        </ul>
+  </div>
+  <div class="header--topdesc">
+    <div class="container">
+      <div class="wrap"> 
+        <nav class="navigation">
+          <ul>
+            <li><a href="">Каталог</a></li>
+            <li><a href="">Новости</a></li>
+          </ul>
+        </nav>
+        <div class="lang">
+          <div class="lang--top">
+            <p>Язык:<span>Русский</span><i class="fa fa-angle-down"></i></p>
+          </div> 
+          <div class="lang--body" style="display: none">
+            <ul>
+              <li><a class="active" href="#">русский</a></li>
+              <li><a href="#">немецкий</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header--botdesc">
+    <div class="nav__control">
+      <div class="container">
+        <div class="wrap">
+           <nav>
+             <ul>
+               <li><a href="" class="product">Продукция</a></li>
+               <li><a href="">О нас</a></li>
+             </ul>
+           </nav>
+            <ul class="filter__control">
+              <li class="filter--avto"> 
+                <a href="" class="active">
+                  <span class="fastic-vehicle"></span>
+                  <strong>Автомобиль</strong>
+                </a>
+              </li>
+               <li class="filter--article">
+                 <a href="">
+                   <span class="bl-code"></span>
+                   <strong>Артикул</strong>   
+                 </a>
+               </li>
+               <li class="choice"></li>
+             </ul>
+        </div>
+      </div>
+    </div>
+    <div class="header-production" style="display: none;">
+      <div class="container">
+        <div class="wrap">
+                <nav>
+                    <ul>
+                        <li><i class="fa fa-angle-right"></i><a href="#">lorem ipsum</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">lorem ipsum</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">lorem ipsum</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">lorem ipsum</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">lorem ipsum</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">lorem ipsum</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">lorem ipsum</a></li>
+                        <li><i class="fa fa-angle-right"></i><a href="#">lorem ipsum</a></li>
+                    </ul>
+                </nav>
+         </div>   
+       </div>
+      </div>
+  </div>
+  <div class="container filter_parent">
+    <div class="filter__item active-show item-avto" data-form="auto">
+      <form action="" class="filter__form">
+        <div class="filter__form--top">
+          <div class="top">
+            <label for="">
+              <input type="text" placeholder="Тип по марке" id="input-typeMark">
+              <select name="" id="">
+                <option value="">Выберите марку</option>
+                <option value="">ACURA</option>
+                <option value="">ACURA</option>
+                <option value="">ACURA</option>
+              </select>
+              <i class="fa fa-angle-down"></i>
+            </label>
+            <label>
+              <input type="text" placeholder="Модель" id="input-Model">
+              <select name="" id="">
+                <option value="" color="#fff">Модель</option>
+                  <option value="">ACURA</option>
+                  <option value="">ACURA</option>
+                  <option value="">ACURA</option>
+              </select>
+              <i class="fa fa-angle-down"></i>
+            </label>
+            <label>
+              <input type="text" placeholder="Тип" id="input-type">
+              <select name="" id="">
+                <option value="" color="#fff">Выберите марку</option>
+                  <option value="">ACURA</option>
+                  <option value="">ACURA</option>
+                  <option value="">ACURA</option>
+              </select>
+              <i class="fa fa-angle-down"></i>
+            </label>
+            <input type="submit" value="Поиск" class="btn">
+          </div>
+          <div class="drop" style="display:none;">
+            <div class="drop__box input-typeMark" style="display: none;">
+              <article>
+                <h2>B</h2>
+                <span>Byd</span>
+              </article>
+              <article>
+                <h2>C</h2>
+                <span>Chery</span>
+              </article>
+              <article>
+                <h2>G</h2>
+                <span>Geely</span><br>
+                <span>Great wall</span>
+              </article>
+              <article>
+                <h2>l</h2>
+                <span>Lifan</span>
+              </article>
+            </div>
+            <div class="drop__box input-Model" style="display:none;"><article>
+                <h2>B</h2>
+                <span>Byd</span>
+              </article>
+              <article>
+                <h2>C</h2>
+                <span>vw(svw)</span>
+              </article>
+              <article>
+                <h2>G</h2>
+                <span>Geely</span><br>
+                <span>Great wall</span>
+              </article>
+              <article>
+                <h2>l</h2>
+                <span>Lifan</span>
+              </article></div>
+            <div class="drop__box input-type" style="display: none;">
+              <table>
+                <tbody>
+                  <tr><th>Тип</th><th>КВт</th><th>Год</th></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                  <tr><td>1.2ТСе</td><td>(85kW)</td><td>11/12--></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>  
+        <div class="filter--form--botton close">
+          <div class="title">Тип</div>
+            <div class="selections ">
+              <div class="checkbox-icon">
+                <input id="All" value="All" type="checkbox">
+                <label for="All" class="fastic-all">Все</label>
+              </div>
+              <div class="checkbox-icon">
+                <input id="Disc" value="Disc" type="checkbox">
+                <label for="Disc" class="fastic-disc">Диски</label>
+              </div>
+              <div class="checkbox-icon">
+                <input id="Pad" value="Pad" type="checkbox">
+                <label for="Pad" class="fastic-pads">Колодки</label>
+              </div>
+              <div class="checkbox-icon">
+                <input id="PadsAccessory" value="PadsAccessory" type="checkbox">
+                 <label for="PadsAccessory" class="bl-damper">Аморти-<br>заторы</label>
+              </div>
+              <div class="checkbox-icon">
+                <input id="Drum" value="Drum" type="checkbox">
+                <label for="Drum" class="fastic-drumbrake">Барабаны</label>
+              </div>
+              <div class="checkbox-icon">
+                <input id="Brakeshoe" value="Brakeshoe" type="checkbox">
+                <label for="Brakeshoe" class="bl-exhaust">Выхлоп. система</label>
+              </div>
+              <div class="checkbox-icon">
+                <input id="Caliper" value="Caliper" type="checkbox">
+                <label for="Caliper" class="bl-engine">Двигатель</label>
+              </div>
+              <div class="checkbox-icon">
+                <input id="HydraulicBrake" value="HydraulicBrake" type="checkbox">
+                 <label for="HydraulicBrake" class="bl-springs">Пружины</label>
+              </div>
+              <div class="checkbox-icon">
+                <input id="HydraulicClutch" value="HydraulicClutch" type="checkbox">
+                <label for="HydraulicClutch" class="bl-suspension">Подвеска</label>
+              </div>
+          </div>
+
+        </div>
+        <div class="filter--form--aria">
+          <div class="toggle">
+            <span>Расширенный поиск</span>
+          </div>
+        </div>              
+      </form>
+    </div>
+    <div class="filter__item item-code" data-form="code">
+      <form action="" class="filter__form">
+        <div class="filter__form--top">
+          <div class="bottom">
+            <span>Поиск по коду</span>
+            <label>
+              <input type="text" name="" placeholder="Введите код Mogen, конкурента, OEM, FMSI или WVA...">
+            </label>
+            <input type="submit" name="" value="Поиск">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</header>
+<div class="sliderTop">
+  <div id="mainSlider" class="owl-carousel">
+        <div class="item" style="background-image: url(img/slide.png);">
+          <div class="container">
+            <div class="content">
+              <h2>Подшибники</h2>
+              <span class="line"></span>
+              <img  class='content__img'src="img/podshipnik.png"  alt="">
+              <div class="content__desc">НИЗКАЯ ВЯЗКОСТЬ ВЫСОКАЯ ТОЧКА КИПЕНИЯ</div>
+              <a href="" class="content__action">Подробнее</a>
+            </div>
+            <img src="img/podshipnik.png" alt="" class="item__img">
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/slide.png);">
+          <div class="container">
+            <div class="content">
+              <h2><strong>2 Mogen</strong> подшипники</h2>
+              <span class="line"></span>
+              <img  class='content__img'src="img/podshipnik.png"  alt="">
+              <div class="content__desc">НИЗКАЯ ВЯЗКОСТЬ ВЫСОКАЯ ТОЧКА КИПЕНИЯ</div>
+              <a href="" class="content__action">Подробнее</a>
+            </div>
+            <img src="img/podshipnik.png" alt="" class="item__img">
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/slide.png);">
+          <div class="container">
+            <div class="content">
+              <h2><strong>3 Mogen</strong> подшипники</h2>
+              <span class="line"></span>
+              <img  class='content__img'src="img/podshipnik.png"  alt="" >
+              <div class="content__desc">НИЗКАЯ ВЯЗКОСТЬ ВЫСОКАЯ ТОЧКА КИПЕНИЯ</div>
+              <a href="" class="content__action">Подробнее</a>
+            </div>
+            <img src="img/podshipnik.png" alt="" class="item__img">
+          </div>
+        </div>
+        <div class="item" style="background-image: url(img/slide.png);">
+          <div class="container">
+            <div class="content">
+              <h2><strong>4 Mogen</strong> подшипники</h2>
+              <span class="line"></span>
+              <img  class='content__img'src="img/podshipnik.png"  alt="">
+              <div class="content__desc">НИЗКАЯ ВЯЗКОСТЬ ВЫСОКАЯ ТОЧКА КИПЕНИЯ</div>
+              <a href="" class="content__action">Подробнее</a>
+            </div>
+            <img src="img/podshipnik.png" alt="" class="item__img">
+          </div>
+        </div>
+  </div>
+</div>
+<div class="news">
+  <div class="container">
+    <section>
+      <article class="w25"><a href="" class="new__item" style="background-image: url(img/01a.png); background-color: #fff;">
+        <div class="new__item--cont">
+          <h3 class="new--title">Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sitmet, consectetur adipisi</p>
+          <span style="background-color: #fff" class="slide">
+            <span>Больше информации</span>
+            <i class="fa fa-angle-right icon"></i>
+          </span>
+        </div>
+      </a></article>
+      <article class="w50"><a href="" class="new__item" style="background-image: url(img/02a.png); background-color: #9ea1aa">
+        <h3 class="new--title">Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sitmet, consectetur adipisi</p>
+          <span style="background-color: #9ea1aa" class="slide">
+            <span>Больше информации</span>
+            <i class="fa fa-angle-right icon"></i>
+          </span>
+      </a></article>
+      <article class="w25"><a href="" class="new__item" style="background-image: url(img/03a.png); background-color: #e4e4e4">
+        <h3 class="new--title">Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sitmet, consectetur adipisi</p>
+          <span style="background-color: #e4e4e4" class="slide">
+            <span>Больше информации</span>
+            <i class="fa fa-angle-right icon"></i>
+          </span>
+      </a></article>
+      <article class="w25"><a href="" class="new__item" style="background-image: url(img/01a.png); background-color: #fff;">
+        <div class="new__item--cont">
+          <h3 class="new--title">Lorem ipsum dolor</h3>
+          <p>Lorem ipsum dolor sitmet, consectetur adipisi</p>
+          <span style="background-color: #fff" class="slide">
+            <span>Больше информации</span>
+            <i class="fa fa-angle-right icon"></i>
+          </span>
+        </div>
+      </a></article>
+      <article class="w25"><a href="" class="new__item" style="background-image: url(img/03a.png); background-color: #e4e4e4">
+        <h3 class="new--title">Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sitmet, consectetur adipisi</p>
+          <span style="background-color: #e4e4e4" class="slide">
+            <span>Больше информации</span>
+            <i class="fa fa-angle-right icon"></i>
+          </span>
+      </a></article>
+      <article class="w50"><a href="" class="new__item" style="background-image: url(img/02a.png); background-color: #9ea1aa">
+        <h3 class="new--title">Lorem ipsum dolor</h3>
+        <p>Lorem ipsum dolor sitmet, consectetur adipisi</p>
+          <span style="background-color: #9ea1aa" class="slide">
+            <span>Больше информации</span>
+            <i class="fa fa-angle-right icon"></i>
+          </span>
+      </a></article>
+    </section>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <div class="footer--top">
+      <div class="footer--brands">
+        <div class="footer--logo"> <img src="img/logo_orange.svg" alt="MOgen"></div>
+        <div class="footer--createBy"><span>Created by</span> <a href=""> <b> bit.lab</b></a></div>
+      </div>
+      <div class="footer--subscribe">
+        <span>Подписаться на новости</span>
+        <form action>
+        <input type="email" class="form__email" placeholder="Ваш e-mail">
+        <input type="submit" value="OK">
+      </form>
+      </div>
+    </div>
+    <div class="footer--bot">
+      <div class="footter__nav">
+        <ul>
+        <li><a href="">news single</a></li>
+        <li><a href="">product</a></li>
+        <li><a href="">catalog</a></li>
+      </ul>
+    </div>
+      <div class="footer__social">
+        <ul>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer--copy">Copyright, 2018</div>
+  </div>
+</footer>
+<div class="modal">
+  <div class="modal--content">
+    <span class="closeModal">X</span>
+    <h5>Подписка Оформленна</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi fugiat fugit placeat totam!</p>
+    <input type="submit" value="ok" class="closeModal">
+  </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="js/preload.bundle.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function() {
+  $('.product').click(function(evt) {
+    var mql = window.matchMedia('all and (max-width: 1008px)');
+    if(mql.matches){
+    }
+    else{
+     evt.preventDefault();
+   $('.header-production').slideToggle(300);
+   $('.header--top').toggleClass('header-top__height');
+ }
+  }); // окончание click
+  $(".lang").click(function(evt) {
+    evt.preventDefault();
+    $('.lang--body').slideToggle(300);
+  });
+    $("#input-typeMark").click(function() {
+      $(".drop").show();
+      $(".input-typeMark").show();
+      $(".input-Model").hide();
+      $(".input-type").hide();
+    });
+    $("#input-Model").click(function() {
+      $(".drop").show();
+      $(".input-Model").show();
+      $(".input-typeMark").hide();
+      $(".input-type").hide();
+    });
+    $("#input-type").click(function() {
+      $(".drop").show();
+      $(".input-type").show();
+      $(".input-Model").hide();
+      $(".input-typeMark").hide();
+    });
+// filter avto or article
+$(".filter--article").click(function(ev) {
+  ev.preventDefault();
+  $('.item-code').addClass('active-show');
+  $('.item-avto').removeClass('active-show');
+  $('.choice').css({
+    left: '112px',
+    property2: 'value2'
+  });
+});
+$(".filter--avto").click(function(ev) {
+  ev.preventDefault();
+  $('.item-avto').addClass('active-show');
+  $('.item-code').removeClass('active-show');
+  $('.choice').css({
+    left: '0',
+    property2: 'value2'
+  });
+});
+$('.form__email').focus(function(event) {
+  $('.modal').addClass('openModal');
+});
+$(".closeModal").click(function(event) {
+   $('.modal').removeClass('openModal');
+});
+$('.new__item').hover(function() {
+  $(this).css({
+    backgroundPosition: ' right 0 bottom 40px' ,
+    property2: 'value2'
+  });
+  $(this).find('.slide').css({
+    height: '44px',
+    property2: 'value2'
+  });
+}, function() {
+  $(this).css({
+    backgroundPosition: ' right 0 bottom 0' ,
+    property2: 'value2'
+  });
+  $(this).find('.slide').css({
+    height: '0',
+    property2: 'value2'
+  });
+});
+$('.filter--form--aria').click(function(event) {
+ $(".filter--form--botton").toggleClass('close');
+});
+ $('#mainSlider').owlCarousel({
+            nav: false,
+            dots: true,
+            items: 1,
+            loop: false,
+            animateOut: 'fadeOut',
+            smartSpeed: 700,
+            autoplayTimeout: 4000,
+            mouseDrag: false,
+            animateIn: 'fadeIn',
+            autoplay: false,
+            autoplayHoverPause: false,
+            onInitialized: function () {
+
+            },
+            onTranslate: function () {
+
+            },
+            onDrag: function () {
+
+            }
+        });
+ $('.btn__menu').click(function(event) {
+  $(this).toggleClass('open_btn');
+ });
+}); //end ready
+function currentSlide(n){
+  var i;
+  var slide=document.getElementsByClassName("mySlide--item");
+  var dot=document.getElementsByClassName("dots__item");
+   for(i=0;slide.length>i;i++){
+    slide[i].classList.remove("active");
+  }
+  slide[n].classList.add("active");
+};
+</script>
+</body>
+</html>
+
+
